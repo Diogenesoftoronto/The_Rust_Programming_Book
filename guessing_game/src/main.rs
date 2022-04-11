@@ -10,7 +10,7 @@ fn main() {
     io::stdin()
         .read_line(&mut ready)
         .expect("Yes or No");
-    if ready == "n" {
+    if ready.trim() == "n" {
         process::exit(0x0100);
     }
     let random_num: u32 = rand::thread_rng().gen_range(1..101);
