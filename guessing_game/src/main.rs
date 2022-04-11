@@ -9,10 +9,10 @@ fn main() {
     let mut ready = String::new();
     io::stdin()
         .read_line(&mut ready)
-        .expect("Yes or No");
+        .expect("Failed to read line");
     if ready.trim() == "n" {
         eprintln!("Strike out! 🏏");
-        process::exit(0x0100);
+        process::exit(0x0100); // exit with error 256
     }
     let random_num: u32 = rand::thread_rng().gen_range(1..101);
     println!("Input a number:");
