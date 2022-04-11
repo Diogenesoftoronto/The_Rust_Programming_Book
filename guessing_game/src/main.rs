@@ -11,6 +11,7 @@ fn main() {
         .read_line(&mut ready)
         .expect("Yes or No");
     if ready.trim() == "n" {
+        eprintln!("Strike out! 🏏");
         process::exit(0x0100);
     }
     let random_num: u32 = rand::thread_rng().gen_range(1..101);
