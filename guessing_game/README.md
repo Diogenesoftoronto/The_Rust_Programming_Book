@@ -14,6 +14,6 @@ The program should begin. If you run into issues try running:
 ```s
 cargo install
 ```
-first.
+first before the previous command.
 
 You can quit the program in your terminal by pressing control/command + c.
